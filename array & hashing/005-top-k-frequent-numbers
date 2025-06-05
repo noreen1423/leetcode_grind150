@@ -1,0 +1,8 @@
+class Solution:
+  def topkfrequentelements(self, nums, k):
+    #Create a dict whose key is num and value is freq of the number
+    count = {}
+    #Create a frequency bucket (list of lists)
+    freq = [[] for i in range(len(nums)+1)] #list comprehension
+    
+    
